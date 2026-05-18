@@ -18,6 +18,7 @@ import logging
 
 def executar_truncate_table(engine, query:str, tabela:str):
     """
+    Objetivo:
     Função para executar o truncate table no banco de dados.
 
     Parâmetros:

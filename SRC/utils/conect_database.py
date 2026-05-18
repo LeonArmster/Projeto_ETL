@@ -20,7 +20,12 @@ def connect_database():
 
 # Função para ler query
 def read_query(file_name: str) -> str:
-    """Função para ler uma query SQL de um arquivo."""
+    """
+    Função para ler uma query SQL de um arquivo.
+    
+    Parametros:
+    file_name: Nome do arquivo SQL a ser lido. O arquivo deve estar localizado no diretório sql_dir.
+    """
     with open(file=sql_dir/file_name, mode='r') as file:
         query = file.read()
     return query

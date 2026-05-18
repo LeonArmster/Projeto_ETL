@@ -4,12 +4,15 @@
 import logging
 import pandas as pd
 from logging.handlers import RotatingFileHandler
-from config import sql, log_dir
+from config import sql_dir, log_dir
 from sqlmodel import text
 
 # Criando a função para confugurar o logger
 def configure_logger():
-    """Configura o logger para o projeto ETL."""
+    """
+    Objetivo:
+    Configura o logger para o projeto ETL.
+    """
 
     # Configuração do logger
     log_path = log_dir / 'etl_log.log'
@@ -33,3 +36,5 @@ def configure_logger():
 
         # Adicionando o manipulador ao logger
         logger.addHandler(handler)
+
+    return logger

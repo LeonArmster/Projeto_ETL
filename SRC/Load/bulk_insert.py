@@ -18,6 +18,7 @@ import logging
 
 def executar_bulk_insert(engine, query:str, tabela:str, arquivo:str):
     """
+    Objetivo:
     Função para executar o bulk insert no banco de dados.
 
     Parâmetros:
@@ -33,7 +34,7 @@ def executar_bulk_insert(engine, query:str, tabela:str, arquivo:str):
     """
 
     # Arquivo que será carregado
-    arquivo = (arquivo).as_posix()
+    arquivo = arquivo
 
     # Exemplo de arquivo
     # arquivo = (arquivo_docker/'Arquivo_Processado.csv').as_posix()

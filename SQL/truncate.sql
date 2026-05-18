@@ -1,1 +1,1 @@
-TRUNCATE TABLE {tabela}
+TRUNCATE TABLE {tabela} -- Nome da tabela que será truncada
